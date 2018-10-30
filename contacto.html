@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EL Cruce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/4.1/examples/checkout/form-validation.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+<div class="py-5 text-center">
+  <h2>Contacta con nosotros</h2>
+  <p class="lead">Responderemos a su mensaje lo más rápido posible.</p>
+</div>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-sm-4 col-md-8">
+      <form class="needs-validation" novalidate>
+
+        <div class="row">
+          <div class="col-sm-4 col-md-6 mb-3">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Campo requerido
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-md-6 mb-3">
+            <label for="empresa">Empresa<span class="text-muted"> (Opcional)</span></label>
+            <input type="empresa" class="form-control" id="empresa" placeholder="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-md-6 mb-3">
+            <label for="email">Email<span class="text-muted"></span></label>
+            <input type="email" class="form-control" id="email" placeholder="direccion@gmail.com" required>
+            <div class="invalid-feedback">
+              Introducir dirección de correo correcta
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-md-6 mb-3">
+            <label for="motivo">Motivo del mensaje</label>
+            <select class="custom-select d-block w-100" id="motivo" required>
+              <option value="">Elegir...</option>
+              <option value="Consulta General">Consulta General</option>
+              <option value="Realizar Pedido">Realizar Pedido</option>
+              <option value="Informe un problema">Informar de un problema</option>
+            </select>
+            <div class="invalid-feedback">
+              Campo requerido
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-4 col-md-6 mb-3">
+            <label for="mensaje">Mensaje</label>
+            <textarea rows="5" cols="30" class="form-control" id="mensaje" name="mensaje" placeholder="Introduzca su mensaje" required ></textarea>
+            <div class="invalid-feedback">
+              Campo requerido
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar</button>
+          <a href="index.html" class="btn btn-lg btn-success btn-block" role="button" aria-pressed="true">Inicio</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="my-3 pt-3">
+  </footer>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+<script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
+</body>
+</html>

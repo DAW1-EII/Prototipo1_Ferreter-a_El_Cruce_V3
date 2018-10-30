@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EL Cruce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/4.1/examples/checkout/form-validation.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-light">
+
+<div class="py-5 text-center">
+  <h2>Tu compra</h2>
+  <p class="lead">Rellena estos campos para poder finalizar tu compra por favor.</p>
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Tu lista</span>
+        <span class="badge badge-secondary badge-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Sierra</h6>
+            <small class="text-muted">Sierra de calar electrónica, con 550 W de potencia, para aluminio y acero.</small>
+          </div>
+          <span class="text-muted">80€</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Manguera</h6>
+            <small class="text-muted">Manguera de 4 capas con refuerzo de poliéster. Longitud 15m, diámetro 15mm. Alta resistencia a la presión. Anti UV </small>
+          </div>
+          <span class="text-muted">12€</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Aire LG</h6>
+            <small class="text-muted">Máquina de aire acondicionado de techo ideal para climatizar estancias de 50 a 60 m2. </small>
+          </div>
+          <span class="text-muted">2200€</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total</span>
+          <strong>2292€ (IGIC no incluido)</strong>
+        </li>
+      </ul>
+    </div>
+
+      <div class="col-sm-4 col-md-8">
+        <h4 class="mb-3">Dirección</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-sm-4 col-md-6 mb-3">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Campo requerido
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-6 mb-3">
+              <label for="apellido">Apellidos</label>
+              <input type="text" class="form-control" id="apellido" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Campo requerido
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">Email<span class="text-muted"></span></label>
+            <input type="email" class="form-control" id="email" placeholder="direccion@gmail.com" required>
+            <div class="invalid-feedback">
+              Introducir dirección de correo correcta
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="direccion">Dirección</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Calle Doramas 54" required>
+            <div class="invalid-feedback">
+              Campo requerido
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label for="isla">Isla</label>
+              <select class="custom-select d-block w-100" id="isla" required>
+                <option value="">Elegir...</option>
+                <option>El Hierro</option>
+                <option>Fuerteventura</option>
+                <option>Gran Canaria</option>
+                <option>La Gomera</option>
+                <option>La Palma</option>
+                <option>Lanzarote</option>
+                <option>Tenerife</option>
+              </select>
+              <div class="invalid-feedback">
+                Campo requerido
+              </div>
+            </div>
+              <div class="col-md-4">
+                <label for="postal">Código Postal</label>
+                <input type="text" class="form-control" id="postal" placeholder="" required>
+                <div class="invalid-feedback">
+                  Campo requerido
+                </div>
+              </div>
+          </div>
+
+      <hr class="mb-4">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="info">
+        <label class="custom-control-label" for="info">Recordar información</label>
+      </div>
+      <hr class="mb-4">
+
+      <h4 class="mb-3">Método de pago</h4>
+
+      <div class="d-block my-3">
+        <div class="custom-control custom-radio">
+          <input id="credito" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+          <label class="custom-control-label" for="credito">Tarjeta de crédito</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="débito" name="paymentMethod" type="radio" class="custom-control-input" required>
+          <label class="custom-control-label" for="débito">Tarjeta de débito</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+          <label class="custom-control-label" for="paypal">PayPal</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="nombreT">Nombre de la tarjeta</label>
+          <input type="text" class="form-control" id="nombreT" placeholder="" required>
+          <small class="text-muted">Nombre completo</small>
+          <div class="invalid-feedback">
+            Campo requerido
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="numeroT">Número de la tarjeta</label>
+          <input type="text" class="form-control" id="numeroT" placeholder="" required>
+          <div class="invalid-feedback">
+            Campo requerido
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <label for="caducidadT">Caducidad</label>
+          <input type="text" class="form-control" id="caducidadT" placeholder="" required>
+          <div class="invalid-feedback">
+            Campo requerido
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="seguridadT">Código seguridad</label>
+          <input type="text" class="form-control" id="seguridadT" placeholder="" required>
+          <div class="invalid-feedback">
+            Campo requerido
+          </div>
+        </div>
+      </div>
+          <div class="row">
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar</button>
+            <a href="index.html" class="btn btn-lg btn-success btn-block" role="button" aria-pressed="true">Inicio</a>
+          </div>
+      </form>
+    </div>
+    </div>
+  <footer class="my-3 pt-3">
+  </footer>
+
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+<script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
+</body>
+</html>
