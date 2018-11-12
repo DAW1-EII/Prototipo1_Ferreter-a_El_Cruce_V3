@@ -19,14 +19,11 @@
       <div class="row">
         <div class="col-xs-12 col-lg-3">
           <div class="col-xs-12 col-lg-1"><img class="rounded" src="img/design/ferrobox2.jpg" height="80" width="80"></div>
-
         </div>
         <div class="col-xs-2 col-lg-7">
           <h1 class="text-center">Ferretería El Cruce</h1>
         </div>
         <div class="col-xs-2 col-lg-2">
-          <a href="carrito.html" class="btn btn-success" role="button" aria-pressed="true">Carrito</a>
-          <a href="registro.html" class="btn btn-success" role="button" aria-pressed="true">Login</a>
         </div>
       </div>
     </header>
@@ -50,6 +47,8 @@
             <input class="form-control col-md-8" type="search" placeholder="Buscar" aria-label="Buscar">
             <button class="btn btn-dark col-xs-4" type="submit">Buscar</button>
           </form>
+          <a href="carrito.html" class="btn btn-success" role="button" aria-pressed="true">Carrito</a>
+          <a href="#ventanaLogin" class="btn btn-success" data-toggle="modal">Mi cuenta</a>
         </div>
       </div>
     </nav>
@@ -57,148 +56,181 @@
   <br>
 
 
-  <div class="container">
+  <div class="container ">
+    <div class="row">
+      <aside class="float-left col-xs-12 col-md-3">
+        <h2 class="text-primary">Filtros</h2>
 
-    <aside class="float-left col-xs-12 col-md-4">
-      <h2 class="text-primary">Filtros</h2>
-
-      <div class="card">
-        <article class="card-group-item">
-          <header class="card-header">
-            <h6 class="title">Rango de precios</h6>
-          </header>
-          <div class="filter-content">
-            <div class="card-body">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label>Mínimo</label>
-                  <input type="number" class="form-control" id="" placeholder="0€">
+        <!--Rango de precios -->
+        <div class="card">
+          <article class="card-group-item">
+            <header class="card-header">
+              <h6 class="title">Seleccionar precio</h6>
+            </header>
+            <div class="filter-content">
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Mínimo</label>
+                    <input type="number" class="form-control" id="" placeholder="0€">
+                  </div>
+                  <div class="form-group col-md-6 text-right">
+                    <label>Máximo</label>
+                    <input type="number" class="form-control" placeholder="5000€">
+                  </div>
                 </div>
-                <div class="form-group col-md-6 text-right">
-                  <label>Máximo</label>
-                  <input type="number" class="form-control" placeholder="5000€">
+              </div>
+            </div>
+          </article>
+
+
+          <!--Colores de los productos -->
+          <article class="card-group-item">
+            <header class="card-header"><h6 class="title">Seleccionar colores</h6></header>
+            <div class="filter-content">
+              <div class="card-body">
+                <label class="btn btn-danger">
+                  <input class="" type="checkbox" name="colorines" value="">
+                  <span class="form-check-label">Rojo</span>
+                </label>
+                <label class="btn btn-success">
+                  <input class="" type="checkbox" name="colorines" value="">
+                  <span class="form-check-label">Verde</span>
+                </label>
+                <label class="btn btn-primary">
+                  <input class="" type="checkbox" name="colorines" value="">
+                  <span class="form-check-label">Azul</span>
+                </label>
+                <label class="btn btn-warning">
+                  <input class="" type="checkbox" name="colorines" value="">
+                  <span class="form-check-label">Naranja</span>
+                </label>
+                <label class="btn btn-light">
+                  <input class="" type="checkbox" name="colorines" value="">
+                  <span class="form-check-label">Blanco</span>
+                </label>
+                <label class="btn btn-secondary">
+                  <input class="" type="checkbox" name="colorines" value="">
+                  <span class="form-check-label">Gris</span>
+                </label>
+                <label class="btn btn-dark">
+                  <input class="" type="checkbox" name="colorines" value="">
+                  <span class="form-check-label">Negro</span>
+                </label>
+              </div>
+            </div>
+          </article>
+
+          <!--Marcas de los productos -->
+          <article class="card-group-item">
+            <header class="card-header"><h6 class="title">Seleccionar marca</h6></header>
+            <div class="filter-content">
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <form>
+                      <input type="radio" name="marca" value="truper">  Truper<br>
+                      <input type="radio" name="marca" value="bosch">  Bosch<br>
+                      <input type="radio" name="marca" value="stanley">  Stanley<br>
+                      <input type="radio" name="marca" value="argos">  Argos<br>
+                      <input type="radio" name="marca" value="devcon">  Devcon<br>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </aside>
+
+      <div class="row">
+        <div class="container">
+          <!--Productos más vendidos -->
+          <div class="col-xs-6 col-md-12">
+            <h2 class="text-danger">Más vendidos</h2>
+            <div class="row alert-light">
+              <div class="row col-xs-12 col-sm-6 col-md-8">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                  <p>
+                  <h4>Sierra</h4>
+                  <img class="rounded" src="img/products/sierra.jpg" height="100" width="100">
+                  <p>80€ (IGIC no incluido)</p>
+                  </p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                  <p>
+                  <h4>Aire LG</h4>
+                  <img class="rounded" src="img/products/aire.jpg"  height="100" width="100">
+                  <p>2200€ (IGIC no incluido)</p>
+                  </p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                  <p>
+                  <h4>Manguera</h4>
+                  <img class="rounded" src="img/products/manguera.jpg" height="100" width="100">
+                  <p>12€ (IGIC no incluido)</p>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!--Productos principales-->
+            <div class="col-xs-6 col-md-12">
+              <h2 class="text-success">Productos</h2>
+            </div>
+            <div class="row alert-light">
+              <div class="row col-xs-12 col-sm-6 col-md-8">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                  <p>
+                  <h4>Aire LG</h4>
+                  <img class="rounded" src="img/products/aire.jpg"  height="100" width="100">
+                  <p>2200€ (IGIC no incluido)</p>
+                  </p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                  <p>
+                  <h4>Amasador</h4>
+                  <img class="rounded" src="img/products/amasadora.jpg" height="100" width="100">
+                  <p>200€ (IGIC no incluido)</p>
+                  </p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                  <p>
+                  <h4>Grifo</h4>
+                  <img class="rounded" src="img/products/grifo.jpg"  height="100" width="100">
+                  <p>45€ (IGIC no incluido)</p>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </article>
-
-        <article class="card-group-item">
-          <header class="card-header"><h6 class="title">Color</h6></header>
-          <div class="filter-content">
-            <div class="card-body">
-              <label class="btn btn-danger">
-                <input class="" type="checkbox" name="colorines" value="">
-                <span class="form-check-label">Rojo</span>
-              </label>
-              <label class="btn btn-success">
-                <input class="" type="checkbox" name="colorines" value="">
-                <span class="form-check-label">Verde</span>
-              </label>
-              <label class="btn btn-primary">
-                <input class="" type="checkbox" name="colorines" value="">
-                <span class="form-check-label">Azul</span>
-              </label>
-              <label class="btn btn-warning">
-                <input class="" type="checkbox" name="colorines" value="">
-                <span class="form-check-label">Naranja</span>
-              </label>
-              <label class="btn btn-light">
-                <input class="" type="checkbox" name="colorines" value="">
-                <span class="form-check-label">Blanco</span>
-              </label>
-              <label class="btn btn-secondary">
-                <input class="" type="checkbox" name="colorines" value="">
-                <span class="form-check-label">Gris</span>
-              </label>
-              <label class="btn btn-dark">
-                <input class="" type="checkbox" name="colorines" value="">
-                <span class="form-check-label">Negro</span>
-              </label>
-            </div>
-          </div>
-        </article>
+        </div>
       </div>
-    </aside>
 
-    <div class="container">
-      <h2 class="text-success">Más vendidos</h2>
-      <div class="row col-xs-12 col-sm-6 col-md-8">
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
-          <p>
-          <h4>Sierra</h4>
-          <img class="rounded" src="img/products/sierra.jpg" height="100" width="100">
-          <p>80€ (IGIC no incluido)</p>
-          </p>
+      <!--Pie de página -->
+      <div class="container">
+        <div class="container-fluid">
+          <footer class="bg-dark">
+            <p class="text-white font-italic text-center">Copyright © 2018 Ferreteria </p>
+            <address class="text-white font-italic text-center">Telf: 123-95-72-22         Mail: ferreteria@ulpgc.es</address>
+          </footer>
         </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
-          <p>
-          <h4>Aire LG</h4>
-          <img class="rounded" src="img/products/aire.jpg"  height="100" width="100">
-          <p>2200€ (IGIC no incluido)</p>
-          </p>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
-          <p>
-          <h4>Manguera</h4>
-          <img class="rounded" src="img/products/manguera.jpg" height="100" width="100">
-          <p>12€ (IGIC no incluido)</p>
-          </p>
-        </div>
-
-
-
-          <div class="container">
-            <h2 class="text-success">Productos</h2>
-          </div>
-
-          <div class="row col-xs-12 col-sm-6 col-md-8">
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
-              <p>
-              <h4>Aire LG</h4>
-              <img class="rounded" src="img/products/aire.jpg"  height="100" width="100">
-              <p>2200€ (IGIC no incluido)</p>
-              </p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
-              <p>
-              <h4>Amasador</h4>
-              <img class="rounded" src="img/products/amasadora.jpg" height="100" width="100">
-              <p>200€ (IGIC no incluido)</p>
-              </p>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
-              <p>
-              <h4>Grifo</h4>
-              <img class="rounded" src="img/products/grifo.jpg"  height="100" width="100">
-              <p>45€ (IGIC no incluido)</p>
-              </p>
-            </div>
-          </div>
+      </div>
     </div>
 
-
   </div>
 
-</div>
-  <div class="container-fluid">
-    <footer class="bg-dark">
-      <p class="text-white font-italic text-center">Copyright © 2018 Ferreteria </p>
-      <address class="text-white font-italic text-center">Telf: 123-95-72-22         Mail: ferreteria@ulpgc.es</address>
-    </footer>
-  </div>
-
-</div>
 
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 </body>
 </html>
