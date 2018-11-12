@@ -2,7 +2,7 @@ jQuery(document).on('submit','#formlg',function (event) {
     event.preventDefault(); //evita el envio d edatos
 
     jQuery.ajax({
-        url: 'main_app/login.php',
+        url: 'json/productos.json',
         type: 'POST',
         dataType: 'json',
         data: $(this).serialize(),
