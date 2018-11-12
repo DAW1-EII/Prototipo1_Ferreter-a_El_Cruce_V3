@@ -1,0 +1,6 @@
+{"usuarios":[
+  {"id":"u-001", "admin":"no", "nombre":"Emilio Delgado", "dni":"45678901W", "tlf":"678908568", "calle":"Desengaño", "número":"21", "piso":"Bajo","codPostal":"35632", "ciudad":"Madrid", "correo":"emiliodelgado@gmail.com", "contraseña":"1234"},
+  {"id":"u-002", "admin":"no", "nombre":"Belén López", "dni":"45678401T", "tlf":"678208568", "calle":"Desengaño", "número":"21", "piso":"3A","codPostal":"35632", "ciudad":"Madrid", "correo":"belenlopez@gmail.com", "contraseña":"1234"},
+  {"id":"u-003", "admin":"yes", "nombre":"Enrique Pastor", "dni":"67328109Y", "tlf":"612534980", "calle":"Montepinar", "número":"6", "piso":"1A","codPostal":"45601", "ciudad":"Madrid", "correo":"presidentedelacomunidad@gmail.com", "contraseña":"1234"},
+  {"id":"u-004", "admin":"no", "nombre":"Fermín Trujillo", "dni":"87341806R", "tlf":"666777888", "calle":"Mercurial", "número":"3", "piso":"","codPostal":"38231", "ciudad":"Madrid", "correo":"picarodeplaya@gmail.com", "contraseña":"1234"}
+]}
