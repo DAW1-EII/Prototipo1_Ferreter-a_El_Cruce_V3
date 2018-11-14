@@ -19,6 +19,7 @@ jQuery(document).on('submit','#formlg',function (event) {
         .always(function () {
             console.log("complete");
         })
-    
 
 })
+
+
