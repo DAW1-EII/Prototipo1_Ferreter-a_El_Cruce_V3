@@ -5,3 +5,4 @@
   {"ID":"p-04", "nombre":"Amasadora", "marca":"CAT", "cod":"am-01","precio":"200", "categoria":"Construcción", "igic":"11", "unidades":"30"},
   {"ID":"p-05", "nombre":"Grifo", "marca":"Roca", "cod":"g-01","precio":"45", "categoria":"Baño", "igic":"11", "unidades":"45"}
 ]}
+
