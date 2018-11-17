@@ -2,7 +2,7 @@ jQuery(document).on('submit','#formlg',function (event) {
     event.preventDefault(); //evita el envio d edatos
 
     jQuery.ajax({
-        url: 'json/productos.json',
+        url: 'json/login.php',
         type: 'POST',
         dataType: 'json',
         data: $(this).serialize(),
@@ -22,9 +22,38 @@ jQuery(document).on('submit','#formlg',function (event) {
 
 })
 
+
+jQuery(document).on('submit','#formlg',function (event) {
+    event.preventDefault(); //evita el envio d edatos
+
+    jQuery.ajax({
+        url: 'json/productos.json',
+        type: 'POST',
+        dataType: 'json',
+        data: $(this).serialize(),
+        beforeSend: function () {
+
+        }
+    })
+        .done(function (respuesta) {
+            console.log(respuesta);
+        })
+        .fail(function (resp) {
+            console.log(resp.responseText);
+        })
+        .always(function () {
+            console.log("complete");
+        })
+
+})
+
+
+
+
+
 var crudApp = new function () {
 
-    // AN ARRAY OF JSON OBJECTS WITH VALUES.
+    // AN ARRAY OF JSON OBJECTS WITH VALUES.               ESTO DEBE VENIR DEL JSON
     this.productos = [
         { ID: '1', Nombre: 'Sierra', Categoría: 'Herramientas', Precio: 45 , Marca:'Bosch' , Código:'s-01' ,Unidades:45},
         { ID: '2', Nombre: 'Aire Acondicionado', Categoría: 'Aires', Precio: 2200, Marca:'LG' , Código:'aa-01' ,Unidades:200},
