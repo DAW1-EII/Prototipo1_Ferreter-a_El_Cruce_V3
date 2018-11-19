@@ -25,6 +25,10 @@ $(document).ready(function() {
             correo: {
                 required: true,
                 email: true,
+            },
+            mensaje: {
+                required: true,
+                maxlength: 500
             }
 
         },
@@ -53,6 +57,10 @@ $(document).ready(function() {
             correo: {
                 required: "Introduzca su correo electrónico",
                 email: "Introduzca una dirección válida",
+            },
+            mensaje:{
+                required: "Introduzca su mensaje",
+                maxlength: "Máximo 500 caracteres"
             }
         }
     });
