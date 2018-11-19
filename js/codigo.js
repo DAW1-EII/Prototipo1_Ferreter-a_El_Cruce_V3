@@ -311,3 +311,14 @@ var crudApp = new function () {
 crudApp.createTable();
 
 
+//Buscador productos
+$(document).ready(function(){
+    $("#buscador").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#container tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
+});
+
