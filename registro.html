@@ -6,21 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/register.css" rel="stylesheet">
-
-    <style type="text/css">
-        .valid {
-            border: 1px solid green;
-        }
-
-        .error{
-            color:red;
-        }
-    </style>
+  <link href="css/estilos.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
 </head>
 
 <body>
-    <div class="container col-sm-10">
+    <div class="container col-sm-4">
         <div class="row mt-5 justify-content-center">
                 <div class="card border-success">
                     <!--Encabezado-->
@@ -54,13 +47,13 @@
                             <!--Contraseña-->
                             <div class="form-group">
                                 <label><b>Nueva contraseña</b></label>
-                                <input name="contraseña" id="contraseña" type="password" class="form-control"  placeholder="Obligatorio">
+                                <input name="contrasena" id="contrasena" type="password" class="form-control"  placeholder="Obligatorio">
                             </div>
 
                             <!--Confirmar contraseña-->
                             <div class="form-group">
                                 <label><b>Confirmar contraseña nueva</b></label>
-                                <input name="confirmarContraseña" id="confirmarContraseña" type="password" class="form-control"  placeholder="Obligatorio">
+                                <input name="confirmarContrasena" id="confirmarContrasena" type="password" class="form-control"  placeholder="Obligatorio">
                             </div>
 
                             <!--DNI-->
@@ -131,134 +124,5 @@
         <div class="mb-5"></div>
     </div>
 
-    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
-    <script>$(document).ready(function() {
-        $("#registro").validate({
-            //reglas que se deben cumplir
-            rules: {
-                nombre: {
-                    required: true,
-                    minlength: 4,
-                    maxlength: 15
-                },
-                apellidos: {
-                    required: true,
-                    minlength: 4,
-                    maxlength: 25
-                },
-                correo: {
-                    required: true,
-                    email: true,
-                },
-                contraseña:{
-                    required: true,
-                    minlength: 6,
-                    maxlength: 30,
-                },
-                confirmarContraseña: {
-                    required: true,
-                    equalTo: "#contraseña"
-                },
-                dni: {
-                    required: false,
-                    minlength: 9,
-                    maxlength: 9,
-                },
-                telefono:{
-                    required: false,
-                    minlength: 9,
-                    maxlength: 9,
-                },
-                direccion: {
-                    required: false,
-                    minlength: 5,
-                    maxlength: 30
-                },
-                numero: {
-                    required: false,
-                    minlength: 1,
-                    maxlength: 4
-                },
-                piso: {
-                    required: false,
-                    minlength: 1,
-                    maxlength: 2
-                },
-                ciudad: {
-                  required: false,
-                  minlength: 4,
-                  maxlength: 30,
-                },
-                codigo:{
-                    required: false,
-                    minlength:5,
-                    maxlength:5,
-                },
-                checkbox: {
-                    required: true,
-                }
-            },
-
-            //mensajes
-            messages: {
-                nombre: {
-                    required: "Introduzca su nombre",
-                    minlength: "Como minimo 4 caracteres",
-                    maxlength: "Como máximo 15 caracteres"
-                },
-                apellidos: {
-                    required: "Introduzca sus apellidos",
-                    minlength: "Como minimo 4 caracteres",
-                    maxlength: "Como máximo 25 caracteres"
-                },
-                correo: {
-                    required: "Introduzca su email",
-                    email: "Introduza una dirección válida",
-                },
-                contraseña:{
-                    required: "Introduzca una nueva contraseña",
-                    minlength: "Debe tener al menos 6 caracteres",
-                    maxlength: "Debe tener como máximo 30 caracteres"
-                },
-                confirmarContraseña: {
-                    required: "Introduzca la misma contraseña",
-                    equalTo: "Las contraseñas no coinciden"
-                },
-                dni: {
-                    minlength: "Debe tener al menos 9 caracteres",
-                    maxlength: "Debe tener como maximo 9 caracteres",
-                },
-                telefono:{
-                    minlength: "Debe tener como mínimo 9 cifras",
-                    maxlength: "Debe tener como máximo 9 cifras",
-                },
-                direccion: {
-                    minlength: "Debe tener como mínimo 5 caracteres",
-                    maxlength: "Debe tener como máximo 30 caracteres"
-                },
-                numero: {
-                    minlength: "Debe tener como mínimo 1 dígito",
-                    maxlength: "Debe tener como máximo 4 dígito"
-                },
-                piso: {
-                    maxlength: "Debe tener como máximo 2 dígitos"
-                },
-                ciudad: {
-                    minlength: "Debe tener como mínimo 4 caracteres",
-                    maxlength: "Debe tener como máximo 30 caracteres",
-                },
-                codigo:{
-                    required: false,
-                    minlength: "Debe tener al menos 5 dígitos",
-                    maxlength: "Debe tener como máximo 5 dígitos",
-                },
-                checkbox: {
-                    required: "Debe aceptar nuestros términos y condiciones",
-                }
-
-            }
-        });
-    });</script>
 </body>
 </html>
