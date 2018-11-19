@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>EL Cruce</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/ofertas.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -31,12 +31,12 @@
 
       <header>
 
-      <div class="row" id="down">
+      <div class="row">
         <div class="col-xs-12 col-md-3 d-none d-md-block">
            <img class="rounded" src="img/design/ferrobox2.jpg" height="80" width="80">
         </div>
         <div class="col-xs-12 col-md-6">
-            <div class="row" id="down"></div>
+            <div class="row"></div>
           <h1 class="text-center" id="cabecera">Ferretería El Cruce</h1>
         </div>
           <div class="col-xs-12 col-md-3">
@@ -136,7 +136,7 @@
                                                           <div class="input-group-prepend">
                                                               <div class="input-group-text"><i class="fa fa-users"></i></div>
                                                           </div>
-                                                          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la empresa">
+                                                          <input type="text" class="form-control" id="nombreE" name="nombre" placeholder="Nombre de la empresa">
                                                       </div>
                                                   </div>
 
@@ -146,7 +146,7 @@
                                                           <div class="input-group-prepend">
                                                               <div class="input-group-text"><i class="fas fa-address-card"></i></div>
                                                           </div>
-                                                          <input type="numbers" class="form-control" id="nombre" name="nombre" placeholder="DNI o NIF" required>
+                                                          <input type="numbers" class="form-control" id="dni" name="nombre" placeholder="DNI o NIF" required>
                                                       </div>
                                                   </div>
 
@@ -156,7 +156,7 @@
                                                           <div class="input-group-prepend">
                                                               <div class="input-group-text"><i class="fas fa-mobile-alt"></i></div>
                                                           </div>
-                                                          <input type="numbers" class="form-control" id="nombre" name="nombre" placeholder="Número de teléfono" required>
+                                                          <input type="numbers" class="form-control" id="telefono" name="nombre" placeholder="Número de teléfono" required>
                                                       </div>
                                                   </div>
 
@@ -166,7 +166,7 @@
                                                           <div class="input-group-prepend">
                                                               <div class="input-group-text"><i class="fa fa-envelope"></i></div>
                                                           </div>
-                                                          <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com" required>
+                                                          <input type="email" class="form-control" id="correo" name="email" placeholder="ejemplo@gmail.com" required>
                                                       </div>
                                                   </div>
 
@@ -192,7 +192,8 @@
                           </div>
                       </div>
                   </div>
-        </div>
+            </div>
+      </div>
       </div>
       </header>
     </div>
@@ -216,8 +217,6 @@
             <input class="form-control col-md-8" type="search" placeholder="Buscar" aria-label="Buscar">
             <button class="btn btn-dark col-xs-4" type="submit">Buscar</button>
           </form>
-
-
 
         </div>
       </div>
@@ -347,12 +346,11 @@
   </div>
 
   <!-- Contenedor pie de página -->
-    <footer class="page-footer font-small blue-grey lighten-5 bg-success" style="border-radius: 12px">
-            <div class="container">
+    <footer class="page-footer font-small blue-grey lighten-5">
+            <div class="container bg-success" style="border-radius: 12px">
                 <!-- Redes sociales -->
                 <div class="row py-4 d-flex align-items-center"></div>
             </div>
-        </div>
 
         <!--Links e información destacada-->
         <div class="container text-center text-md-left mt-5">
@@ -397,7 +395,7 @@
                 <!--Contacto-->
                 <div class="col-md-6 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
                     <h6 class="text-uppercase font-weight-bold">Contacto</h6>
-                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <hr class="green accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p><i class="fa fa-home mr-3"></i> Cruce de arinaga, Gran Canaria</p>
                     <p><i class="fa fa-envelope mr-3"></i> ferrelcruce@gmail.com</p>
                     <p><i class="fa fa-phone mr-3"></i> + 34 928 334 961</p>
