@@ -1,8 +1,8 @@
 {"productos":[
-  {"ID":"p-01", "nombre":"Sierra", "marca":"Bosch", "cod":"s-01","precio":"80", "categoria":"Sierras", "igic":"11", "unidades":"45"},
-  {"ID":"p-02", "nombre":"Aire acondicionado", "marca":"LG", "cod":"aa-01","precio":"2200", "categoria":"Aires acondicionados", "igic":"11", "unidades":"200"},
-  {"ID":"p-03", "nombre":"Manguera", "marca":"Itub", "cod":"m-01","precio":"12", "categoria":"Manguera", "igic":"11", "unidades":"70"},
-  {"ID":"p-04", "nombre":"Amasadora", "marca":"CAT", "cod":"am-01","precio":"200", "categoria":"Construcción", "igic":"11", "unidades":"30"},
-  {"ID":"p-05", "nombre":"Grifo", "marca":"Roca", "cod":"g-01","precio":"45", "categoria":"Baño", "igic":"11", "unidades":"45"}
+  {"ID":"p-01", "nombre":"Sierra", "marca":"Bosch", "cod":"s-01","precio":"80", "oferta":"71", "categoria":"Sierras", "igic":"11", "unidades":"45"},
+  {"ID":"p-02", "nombre":"Aire acondicionado", "marca":"LG", "cod":"aa-01","precio":"2200", "oferta":"71", "categoria":"Aires acondicionados", "igic":"11", "unidades":"200"},
+  {"ID":"p-03", "nombre":"Manguera", "marca":"Itub", "cod":"m-01","precio":"12", "oferta":"", "categoria":"Manguera", "igic":"11", "unidades":"70"},
+  {"ID":"p-04", "nombre":"Amasadora", "marca":"CAT", "cod":"am-01","precio":"200", "oferta":"150", "categoria":"Construcción", "igic":"11", "unidades":"30"},
+  {"ID":"p-05", "nombre":"Grifo", "marca":"Roca", "cod":"g-01","precio":"45", "oferta":"39", "categoria":"Baño", "igic":"11", "unidades":"45"}
 ]}
 
